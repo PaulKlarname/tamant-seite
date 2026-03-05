@@ -1046,6 +1046,15 @@ footer {
   h1 { font-size: 2.5rem; }
   h2 { font-size: 2rem; }
 
+  /* Fix: backdrop-filter auf der Nav erzeugt einen neuen Containing Block für
+     position:fixed Kinder – das Mobile-Overlay würde sonst nur die Nav-Höhe
+     statt den ganzen Viewport bedecken. Auf Mobile daher kein blur. */
+  .nav.scrolled {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(5, 10, 20, 0.97);
+  }
+
   .nav-links {
     display: none;
     position: fixed;
@@ -1076,6 +1085,14 @@ footer {
   .footer-links    { justify-content: center; }
   .about-image img { height: 300px; }
   .sci-image img   { height: 260px; }
+
+  /* Fix: Labeltext (Wissenschaft:/Praxis:) als Block, damit die unterschiedliche
+     Label-Länge nicht zu visuell ungleichmäßiger Einrückung führt. */
+  .feature-list li strong {
+    display: block;
+    color: var(--text-primary);
+    margin-bottom: 0.15rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1083,4 +1100,14 @@ footer {
   .hero-content { padding: 0 1.25rem; }
   .nav-inner { padding: 0 1.25rem; }
   .booking-inner .btn { width: 100%; justify-content: center; }
+
+  /* Fix: Ki-Critical Box – weniger Innenabstand, damit der lange Button-Text
+     nicht abgeschnitten wird. white-space: normal erlaubt Zeilenumbruch. */
+  .ki-critical {
+    padding: 1.75rem 1.5rem 1.5rem;
+  }
+  .ki-critical .btn {
+    white-space: normal;
+    text-align: center;
+  }
 }
