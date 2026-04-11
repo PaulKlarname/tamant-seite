@@ -850,7 +850,7 @@ section { position: relative; z-index: 1; }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   margin-top: 3.5rem;
 }
@@ -1079,7 +1079,20 @@ footer {
   .team-card       { grid-template-columns: 1fr; gap: 2rem; }
   .sci-block       { grid-template-columns: 1fr; gap: 2.5rem; }
   .pub-grid        { grid-template-columns: 1fr; }
-  .projects-grid   { grid-template-columns: 1fr; }
+  .projects-grid   {
+    display: flex;
+    grid-template-columns: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+    scrollbar-width: thin;
+  }
+  .projects-grid .project-card {
+    flex: 0 0 85%;
+    min-width: 260px;
+    scroll-snap-align: start;
+  }
   .services-header { flex-direction: column; align-items: flex-start; }
   .footer-inner    { flex-direction: column; text-align: center; }
   .footer-links    { justify-content: center; }
