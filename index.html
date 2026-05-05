@@ -9,7 +9,7 @@
   <meta property="og:url" content="https://tamant.de/">
   <meta property="og:title" content="TAMANT – KI-Beratung für bessere Kommunikation">
   <meta property="og:description" content="Strategische KI-Beratung, praxisnahe Schulungen und konkrete Implementierung. Wissenschaftlich fundiert, persönlich betreut.">
-  <meta property="og:image" content="https://tamant.de/Multimedia/TAMANT%20Logo%20wei%C3%9F_quadrat.png">
+  <meta property="og:image" content="https://tamant.de/Multimedia/TAMANT%20Logo_schwarz.png">
   <meta property="og:locale" content="de_DE">
   <meta property="og:site_name" content="TAMANT">
   <title>TAMANT – KI-Beratung für bessere Kommunikation</title>
@@ -48,11 +48,12 @@
   ══════════════════════════════════════ -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#home" class="nav-logo" aria-label="TAMANT – Startseite">
-        <img src="Multimedia/TAMANT Logo weiß_quadrat.png" alt="TAMANT Logo">
+      <a href="#home" class="brand" aria-label="TAMANT – Startseite">
+        <img class="brand-mark" src="Multimedia/TAMANT Logo_schwarz.png" alt="" aria-hidden="true">
+        TAMANT
       </a>
       <ul class="nav-links" id="nav-links" role="navigation" aria-label="Hauptnavigation">
-        <li><a href="#leistungen">Unsere Leistungen</a></li>
+        <li><a href="#leistungen">Leistungen</a></li>
         <li><a href="#ueber-uns">Über uns</a></li>
         <li><a href="#termin" class="nav-cta">Termin buchen</a></li>
       </ul>
@@ -64,49 +65,54 @@
 
 
   <!-- ══════════════════════════════════════
-       HERO
+       HERO – Akteur-Netzwerk
   ══════════════════════════════════════ -->
   <section class="hero" id="home" aria-label="Willkommen bei TAMANT">
-    <div class="hero-video" aria-hidden="true">
-      <video autoplay muted loop playsinline preload="metadata">
-        <source src="Multimedia/AI_Powered_Network_Animation.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-graph" id="hero-graph" aria-hidden="true"></div>
 
     <div class="hero-content">
-      <p class="hero-label">KI-Beratung, Schulungen &amp; Implementierung</p>
-      <h1>Bessere Kommunikation<br>durch KI.</h1>
-      <p class="hero-sub">
-        Mit dem Menschen im Fokus. Wir helfen Ihnen, generative KI strategisch
-        in Ihre Kommunikationsarbeit zu integrieren – von der Konzeption bis
-        zur Umsetzung.
-      </p>
-      <div class="hero-actions">
-        <a href="#termin" class="btn btn-primary">Kostenlosen Termin buchen →</a>
-        <a href="#leistungen" class="btn btn-outline">Unsere Leistungen</a>
+      <div>
+        <div class="hero-eyebrow">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="mono">KI-Beratung, Schulungen &amp; Implementierung</span>
+        </div>
+        <h1>
+          Bessere<br>
+          Kommunikation<br>
+          durch <em>KI.</em>
+        </h1>
+        <p class="hero-sub">
+          Mit dem Menschen im Fokus. Wir helfen Ihnen, generative KI strategisch
+          in Ihre Kommunikationsarbeit zu integrieren – von der Konzeption bis
+          zur Umsetzung.
+        </p>
+        <div class="hero-actions">
+          <a href="#termin" class="btn btn-primary">Kostenlosen Termin buchen →</a>
+          <a href="#leistungen" class="btn btn-ghost">Unsere Leistungen</a>
+        </div>
+      </div>
+
+      <div class="hero-side">
+        <div class="legend" aria-hidden="true">
+          <div class="item"><span class="swatch filled"></span> Mensch</div>
+          <div class="item"><span class="swatch accent"></span> KI</div>
+          <div class="item"><span class="swatch"></span> Daten / Prozess</div>
+        </div>
       </div>
     </div>
-
-    <div class="scroll-hint" aria-hidden="true">scroll</div>
   </section>
-
-  <div class="divider"></div>
 
 
   <!-- ══════════════════════════════════════
-       LEISTUNGEN
+       LEISTUNGEN – Actor map
   ══════════════════════════════════════ -->
-  <section class="services" id="leistungen">
+  <section class="section" id="leistungen">
     <div class="container">
 
-      <div class="services-header">
+      <div class="section-head">
         <div>
           <p class="section-tag">Unsere Leistungen</p>
-          <h2 class="section-title">
-            Starten Sie Ihre<br>
-            <span class="accent">KI-Journey.</span>
-          </h2>
+          <h2 class="section-title">Starten Sie Ihre <em>KI-Journey.</em></h2>
         </div>
         <p class="section-desc">
           Wir unterstützen Sie in allen KI-relevanten Bereichen – von der
@@ -115,12 +121,24 @@
         </p>
       </div>
 
-      <!-- Three service cards -->
-      <div class="services-grid">
+      <div class="actor-map">
 
-        <div class="service-card fade-up">
-          <p class="service-num">01</p>
-          <div class="service-icon">◈</div>
+        <article class="actor-card fade-up">
+          <div class="actor-head">
+            <div>
+              <div class="actor-num">01 / 03</div>
+            </div>
+            <svg class="actor-glyph" viewBox="0 0 60 60" aria-hidden="true">
+              <line x1="30" y1="30" x2="8"  y2="14" stroke="currentColor" stroke-width="0.8"/>
+              <line x1="30" y1="30" x2="52" y2="14" stroke="currentColor" stroke-width="0.8"/>
+              <line x1="30" y1="30" x2="30" y2="54" stroke="currentColor" stroke-width="0.8"/>
+              <circle cx="8"  cy="14" r="2.5" fill="currentColor"/>
+              <circle cx="52" cy="14" r="2.5" fill="currentColor"/>
+              <circle cx="30" cy="54" r="2.5" fill="currentColor"/>
+              <circle class="outer" cx="30" cy="30" r="6" fill="none" stroke="currentColor" stroke-width="1.2"/>
+              <circle cx="30" cy="30" r="2" fill="var(--accent)"/>
+            </svg>
+          </div>
           <h3>Beratung &amp; Konzeption</h3>
           <p>
             Wir beraten Sie zu allen KI-Themen in Ihrer Kommunikationsarbeit.
@@ -128,12 +146,26 @@
             können automatisiert werden? Wir entwickeln maßgeschneiderte
             Konzepte für Ihren Erfolg.
           </p>
-          <a href="#termin" class="card-cta">Gespräch vereinbaren</a>
-        </div>
+          <div class="actor-foot">
+            <span class="mono">01.action</span>
+            <a href="#termin" class="btn-arrow">Gespräch vereinbaren →</a>
+          </div>
+        </article>
 
-        <div class="service-card fade-up delay-1">
-          <p class="service-num">02</p>
-          <div class="service-icon">◎</div>
+        <article class="actor-card fade-up delay-1">
+          <div class="actor-head">
+            <div>
+              <div class="actor-num">02 / 03</div>
+            </div>
+            <svg class="actor-glyph" viewBox="0 0 60 60" aria-hidden="true">
+              <line x1="8"  y1="30" x2="52" y2="30" stroke="currentColor" stroke-width="0.8"/>
+              <circle cx="8"  cy="30" r="3" fill="none" stroke="currentColor"/>
+              <circle cx="22" cy="30" r="3" fill="none" stroke="currentColor"/>
+              <circle cx="38" cy="30" r="3" fill="none" stroke="currentColor"/>
+              <circle cx="52" cy="30" r="3" fill="var(--accent)"/>
+              <circle class="ring" cx="38" cy="30" r="9" fill="none" stroke="var(--accent)" stroke-opacity="0.5" stroke-width="0.8" stroke-dasharray="2 3"/>
+            </svg>
+          </div>
           <h3>Schulungen &amp; Change Kommunikation</h3>
           <p>
             Zum professionellen Umgang mit KI bieten wir praxisnahe Schulungen
@@ -141,12 +173,31 @@
             Sie auch kommunikativ beim Rollout von KI-Systemen in Ihrem
             Unternehmen.
           </p>
-          <a href="#termin" class="card-cta">Gespräch vereinbaren</a>
-        </div>
+          <div class="actor-foot">
+            <span class="mono">02.action</span>
+            <a href="#termin" class="btn-arrow">Gespräch vereinbaren →</a>
+          </div>
+        </article>
 
-        <div class="service-card fade-up delay-2">
-          <p class="service-num">03</p>
-          <div class="service-icon">◉</div>
+        <article class="actor-card fade-up delay-2">
+          <div class="actor-head">
+            <div>
+              <div class="actor-num">03 / 03</div>
+            </div>
+            <svg class="actor-glyph" viewBox="0 0 60 60" aria-hidden="true">
+              <line x1="14" y1="14" x2="46" y2="14" stroke="currentColor" stroke-width="0.8"/>
+              <line x1="14" y1="14" x2="14" y2="46" stroke="currentColor" stroke-width="0.8"/>
+              <line x1="46" y1="14" x2="46" y2="46" stroke="currentColor" stroke-width="0.8"/>
+              <line x1="14" y1="46" x2="46" y2="46" stroke="currentColor" stroke-width="0.8"/>
+              <line x1="14" y1="14" x2="46" y2="46" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 2"/>
+              <line x1="46" y1="14" x2="14" y2="46" stroke="currentColor" stroke-width="0.4" stroke-dasharray="2 2"/>
+              <circle cx="14" cy="14" r="2.5" fill="currentColor"/>
+              <circle cx="46" cy="14" r="2.5" fill="currentColor"/>
+              <circle cx="14" cy="46" r="2.5" fill="currentColor"/>
+              <circle cx="46" cy="46" r="2.5" fill="var(--accent)"/>
+              <circle class="outer" cx="30" cy="30" r="4" fill="var(--paper)" stroke="currentColor" stroke-width="1"/>
+            </svg>
+          </div>
           <h3>KI-Lösungen &amp; Implementierung</h3>
           <p>
             Wir entwickeln und implementieren konkrete KI-Anwendungen: Chatbots
@@ -154,12 +205,15 @@
             Content-Erstellung, intelligente Lösungen für Ihre Pressearbeit.
             Individuell auf Ihre Bedürfnisse zugeschnitten.
           </p>
-          <a href="#termin" class="card-cta">Gespräch vereinbaren</a>
-        </div>
+          <div class="actor-foot">
+            <span class="mono">03.action</span>
+            <a href="#termin" class="btn-arrow">Gespräch vereinbaren →</a>
+          </div>
+        </article>
 
-      </div><!-- /services-grid -->
+      </div><!-- /actor-map -->
 
-      <!-- Pricing block -->
+      <!-- Faire Konditionen / Pricing -->
       <div class="pricing-block fade-up">
         <div class="pricing-visual">
           <img src="Multimedia/Layout Dialogue Design.jpg"
@@ -168,43 +222,46 @@
         </div>
         <div class="pricing-text">
           <p class="section-tag">Faire Konditionen</p>
-          <h3>Preiswerter Service</h3>
+          <h3>Preiswerter <em>Service.</em></h3>
           <p>
             Jedes Projekt ist einzigartig. Deswegen haben wir keine
             Pauschalpreise, sondern entwickeln individuelle Angebote.
           </p>
           <p>
             Durch unser agiles Team bieten wir professionelle KI-Lösungen und
-            Beratung zu fairen Konditionen an. Vereinbaren Sie ein unverbindliches
-            Erstgespräch und nutzen Sie KI für erfolgreiche Kommunikation!
+            Beratung zu fairen Konditionen an. Vereinbaren Sie ein
+            unverbindliches Erstgespräch und nutzen Sie KI für erfolgreiche
+            Kommunikation!
           </p>
           <div class="btn-group">
             <a href="#termin" class="btn btn-primary">Gespräch vereinbaren →</a>
             <a href="#ueber-uns" class="btn btn-outline">Über uns</a>
           </div>
         </div>
-      </div><!-- /pricing-block -->
+      </div>
 
       <!-- KI Critical callout -->
       <div class="ki-critical fade-up">
-        <p class="section-tag">KI-kritisch gedacht</p>
-        <h3>Sehen Sie KI noch kritisch?</h3>
-        <p>
-          Wir auch! Ein Einsatz von KI sollte nie unbedacht erfolgen. Jedoch
-          nutzen viele Mitarbeiter*innen in Unternehmen KI-Anwendungen ohne
-          Wissen ihrer Arbeitgeber. Dies führt zu Datenschutzrisiken und
-          beeinflusster Kommunikation.
-        </p>
-        <p>
-          Klare Guidelines und personalisierte Anwendungen können diese
-          Schattennutzung eingrenzen und steuern. Wir helfen Ihnen gerne dabei.
-        </p>
-        <a href="https://it-kenner.heise.de/it-summit-by-heise/ki-praxis/shadow-ai-wie-heimliche-ki-nutzung-unternehmensdaten-gefaehrdet/"
-           target="_blank" rel="noopener noreferrer"
-           class="btn btn-outline"
-           style="margin-top:1.5rem; font-size:0.85rem; padding:0.6rem 1.25rem;">
-          Mehr über Schattennutzung von KI erfahren →
-        </a>
+        <div class="ki-critical-mark" aria-hidden="true">!</div>
+        <div>
+          <p class="section-tag">KI-kritisch gedacht</p>
+          <h3>Sehen Sie KI noch kritisch?</h3>
+          <p>
+            Wir auch! Ein Einsatz von KI sollte nie unbedacht erfolgen. Jedoch
+            nutzen viele Mitarbeiter*innen in Unternehmen KI-Anwendungen ohne
+            Wissen ihrer Arbeitgeber. Dies führt zu Datenschutzrisiken und
+            beeinflusster Kommunikation.
+          </p>
+          <p>
+            Klare Guidelines und personalisierte Anwendungen können diese
+            Schattennutzung eingrenzen und steuern. Wir helfen Ihnen gerne dabei.
+          </p>
+          <a href="https://it-kenner.heise.de/it-summit-by-heise/ki-praxis/shadow-ai-wie-heimliche-ki-nutzung-unternehmensdaten-gefaehrdet/"
+             target="_blank" rel="noopener noreferrer"
+             class="btn-arrow">
+            Mehr über Schattennutzung von KI erfahren →
+          </a>
+        </div>
       </div>
 
     </div>
@@ -212,42 +269,37 @@
 
 
   <!-- ══════════════════════════════════════
-       STATS / PILLARS
+       KENNZAHLEN / PILLARS
   ══════════════════════════════════════ -->
   <section class="stats-section" aria-label="Unsere Stärken">
-    <div class="stats-bg" aria-hidden="true">
-      <img src="Multimedia/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg"
-           alt="" loading="lazy">
-    </div>
-    <div class="container">
-      <div class="stats-inner">
-        <div class="stats-grid">
-          <div class="stat-card fade-up">
-            <span class="stat-number">100%</span>
-            <div class="stat-label">Wissenschaftlich</div>
-            <p class="stat-desc">
-              Durch unsere wissenschaftliche Arbeit sind wir immer auf dem
-              neuesten Stand der KI-Forschung und Kommunikationswissenschaft.
-            </p>
-          </div>
-          <div class="stat-card fade-up delay-1">
-            <span class="stat-number">100%</span>
-            <div class="stat-label">Praktisch</div>
-            <p class="stat-desc">
-              Wir kennen die Anforderungen moderner Unternehmenskommunikation
-              und entwickeln KI-Lösungen, die wirklich funktionieren.
-            </p>
-          </div>
-          <div class="stat-card fade-up delay-2">
-            <span class="stat-number">100%</span>
-            <div class="stat-label">Persönlich</div>
-            <p class="stat-desc">
-              Jedes Projekt wird individuell konzipiert. Unsere Beratung,
-              Lösungen und Schulungen passen wir genau auf Ihre
-              Kommunikationsziele an.
-            </p>
-          </div>
-        </div>
+    <div class="stats-grid">
+      <div class="stat-card fade-up">
+        <div class="stat-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+        <span class="stat-number">100%</span>
+        <div class="stat-label">Wissenschaftlich</div>
+        <p class="stat-desc">
+          Durch unsere wissenschaftliche Arbeit sind wir immer auf dem
+          neuesten Stand der KI-Forschung und Kommunikationswissenschaft.
+        </p>
+      </div>
+      <div class="stat-card fade-up delay-1">
+        <div class="stat-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+        <span class="stat-number">100%</span>
+        <div class="stat-label">Praktisch</div>
+        <p class="stat-desc">
+          Wir kennen die Anforderungen moderner Unternehmenskommunikation
+          und entwickeln KI-Lösungen, die wirklich funktionieren.
+        </p>
+      </div>
+      <div class="stat-card fade-up delay-2">
+        <div class="stat-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+        <span class="stat-number">100%</span>
+        <div class="stat-label">Persönlich</div>
+        <p class="stat-desc">
+          Jedes Projekt wird individuell konzipiert. Unsere Beratung,
+          Lösungen und Schulungen passen wir genau auf Ihre
+          Kommunikationsziele an.
+        </p>
       </div>
     </div>
   </section>
@@ -267,7 +319,7 @@
         </div>
         <div class="about-text">
           <p class="section-tag">Über uns</p>
-          <h2 class="section-title">Unsere <span class="accent">Philosophie</span></h2>
+          <h2 class="section-title">Unsere <em>Philosophie.</em></h2>
           <p>
             Wir nutzen das Potenzial generativer KI, um Ihre Kommunikation auf
             ein neues Level zu heben.
@@ -291,12 +343,12 @@
       <div class="about-split">
         <div class="about-text">
           <p class="section-tag">Unsere Geschichte</p>
-          <h2 class="section-title">Expertise aus Wissenschaft und <span class="accent">Praxis</span></h2>
+          <h2 class="section-title">Expertise aus Wissenschaft und <em>Praxis.</em></h2>
           <p>
-            Unser Name TAMANT vereint zwei zentrale Theorien der
-            Technologieforschung – das Technology Acceptance Model (TAM) und
-            die Actor-Network-Theory (ANT). Dies unterstreicht unseren Ansatz:
-            wissenschaftlich fundiert, praktisch anwendbar.
+            Unser Name <strong>TAMANT</strong> vereint zwei zentrale Theorien
+            der Technologieforschung – das Technology Acceptance Model (TAM)
+            und die Actor-Network-Theory (ANT). Dies unterstreicht unseren
+            Ansatz: wissenschaftlich fundiert, praktisch anwendbar.
           </p>
           <ul class="feature-list">
             <li>
@@ -322,15 +374,13 @@
 
 
   <!-- ══════════════════════════════════════
-       TEAM
+       TEAM – Ihr Ansprechpartner
   ══════════════════════════════════════ -->
   <section class="team-section">
     <div class="container">
       <div class="team-header">
-        <p class="section-tag" style="justify-content:center;">Das Team</p>
-        <h2 class="section-title">
-          Ihr <span class="accent">Ansprechpartner</span>
-        </h2>
+        <p class="section-tag">Das Team</p>
+        <h2 class="section-title">Ihr <em>Ansprechpartner.</em></h2>
       </div>
 
       <div class="team-card fade-up">
@@ -340,7 +390,7 @@
         </div>
         <div class="team-info">
           <h3>Paul Heß</h3>
-          <p class="team-role">Gründer &amp; KI-Berater</p>
+          <p class="role">Gründer &amp; KI-Berater</p>
           <p>
             Paul ist Doktorand und Lehrbeauftragter an der Hochschule Darmstadt.
             Hier forscht und lehrt er zu KI-Technologien sowie zur digitalen
@@ -368,7 +418,7 @@
         </div>
       </div>
 
-      <!-- Scientific Focus block -->
+      <!-- Wissenschaftlicher Fokus -->
       <div class="sci-block fade-up">
         <div class="sci-image">
           <img src="Multimedia/IMG-20250522-WA0017.jpg"
@@ -376,7 +426,7 @@
         </div>
         <div class="sci-text">
           <p class="section-tag">Wissenschaftlicher Fokus</p>
-          <h3>Expertise aus Wissenschaft und Praxis</h3>
+          <h3>Empirisch geprüft. Praktisch <em>angewandt.</em></h3>
           <p>
             Unsere Anwendung von KI in der Praxis ist konstant empirisch geprüft
             und mit den neusten Erkenntnissen der Forschung abgeglichen. Durch
@@ -385,8 +435,7 @@
           </p>
           <a href="https://mediencampus.h-da.de/forschen/angebote/wissenschaftlicher-nachwuchs"
              target="_blank" rel="noopener noreferrer"
-             class="btn btn-outline"
-             style="font-size:0.85rem; padding:0.6rem 1.25rem;">
+             class="btn-arrow">
             Forschungsprofil ansehen →
           </a>
         </div>
@@ -397,44 +446,56 @@
 
 
   <!-- ══════════════════════════════════════
-       PUBLIKATIONEN
+       PUBLIKATIONEN – Notebook
   ══════════════════════════════════════ -->
   <section class="publications">
     <div class="container">
       <p class="section-tag">Wissenschaft</p>
       <h2 class="section-title">Publikationen</h2>
 
-      <div class="pub-grid">
+      <div class="notebook">
 
-        <div class="pub-card fade-up">
-          <p class="pub-tag">Buchkapitel · März 2026</p>
-          <h4>Workforce Impact of AI-Based Automation in Media</h4>
-          <p>Kapitel 12 im Handbook of AI-based Media Disruption (Springer).</p>
-          <a href="https://link.springer.com/book/9783032076045"
-             target="_blank" rel="noopener noreferrer">
-            Mehr erfahren →
-          </a>
+        <div class="notebook-row fade-up">
+          <div class="nb-num">[P01]</div>
+          <div class="nb-tag">Buchkapitel · März 2026</div>
+          <div>
+            <h4>Workforce Impact of AI-Based Automation in Media</h4>
+            <p class="nb-meta">Kapitel 12 im Handbook of AI-based Media Disruption (Springer).</p>
+          </div>
+          <div class="nb-action">
+            <a href="https://link.springer.com/book/9783032076045"
+               target="_blank" rel="noopener noreferrer"
+               class="btn-arrow">Mehr erfahren →</a>
+          </div>
         </div>
 
-        <div class="pub-card fade-up delay-1">
-          <p class="pub-tag">Konferenz · AIMEDIA 2025</p>
-          <h4>Human-AI Collaboration and Creative Skills: A Panel-based Industry Study from the German Media Sector</h4>
-          <p>The First International Conference on AI-based Media Innovation.</p>
-          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=de&user=tS3W3GwAAAAJ&citation_for_view=tS3W3GwAAAAJ:u-x6o8ySG0sC"
-             target="_blank" rel="noopener noreferrer">
-            Mehr erfahren →
-          </a>
+        <div class="notebook-row fade-up">
+          <div class="nb-num">[P02]</div>
+          <div class="nb-tag">Konferenz · AIMEDIA 2025</div>
+          <div>
+            <h4>Human-AI Collaboration and Creative Skills: A Panel-based Industry Study from the German Media Sector</h4>
+            <p class="nb-meta">The First International Conference on AI-based Media Innovation.</p>
+          </div>
+          <div class="nb-action">
+            <a href="https://scholar.google.com/citations?view_op=view_citation&hl=de&user=tS3W3GwAAAAJ&citation_for_view=tS3W3GwAAAAJ:u-x6o8ySG0sC"
+               target="_blank" rel="noopener noreferrer"
+               class="btn-arrow">Mehr erfahren →</a>
+          </div>
         </div>
 
-        <div class="pub-card fade-up delay-2">
-          <div class="pub-award">🏆 Best Paper Award</div>
-          <p class="pub-tag">Konferenz · AIMEDIA 2025</p>
-          <h4>Exploring Human-AI Collaboration in Creative Workflows: A Case Study on Acceptance and Efficiency in Brand Design</h4>
-          <p>The First International Conference on AI-based Media Innovation.</p>
-          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=de&user=tS3W3GwAAAAJ&citation_for_view=tS3W3GwAAAAJ:u5HHmVD_uO8C"
-             target="_blank" rel="noopener noreferrer">
-            Mehr erfahren →
-          </a>
+        <div class="notebook-row fade-up">
+          <div class="nb-num">[P03]</div>
+          <div class="nb-tag">Konferenz · AIMEDIA 2025</div>
+          <div>
+            <span class="award-pill">🏆 Best Paper Award</span>
+            <h4>Exploring Human-AI Collaboration in Creative Workflows: A Case Study on Acceptance and Efficiency in Brand Design</h4>
+            <p class="nb-meta">The First International Conference on AI-based Media Innovation.</p>
+          </div>
+          <div class="nb-action">
+            <a href="https://scholar.google.com/citations?view_op=view_citation&hl=de&user=tS3W3GwAAAAJ&citation_for_view=tS3W3GwAAAAJ:u5HHmVD_uO8C"
+               target="_blank" rel="noopener noreferrer"
+               class="btn-arrow">Mehr erfahren →</a>
+          </div>
         </div>
 
       </div>
@@ -443,12 +504,12 @@
 
 
   <!-- ══════════════════════════════════════
-       PROJEKTE
+       PROJEKTE / REFERENZEN
   ══════════════════════════════════════ -->
   <section class="projects">
     <div class="container">
       <p class="section-tag">Referenzen</p>
-      <h2 class="section-title">Unsere <span class="accent">Projekte</span></h2>
+      <h2 class="section-title">Unsere <em>Projekte.</em></h2>
       <p class="section-desc">
         Über die letzten Jahre hinweg konnten wir bereits diverse Projekte in
         unterschiedlichen Bereichen umsetzen.
@@ -456,7 +517,7 @@
 
       <div class="projects-grid">
 
-        <div class="project-card fade-up">
+        <article class="project-card fade-up">
           <p class="project-num">01</p>
           <h3>Chatbot-Coaching</h3>
           <p>
@@ -464,14 +525,14 @@
             studentische Gruppen gecoacht, um Prototypen für die
             Bundeszentrale für Politische Bildung (bpb) zu entwickeln.
           </p>
-          <a href="https://mediencampus.h-da.de/studieren/studienangebot/bachelor/onlinekommunikation/projekte/projekte-detail/ask-me-anything"
-             target="_blank" rel="noopener noreferrer"
-             class="btn btn-outline">
-            Mehr erfahren →
-          </a>
-        </div>
+          <div class="pj-foot">
+            <a href="https://mediencampus.h-da.de/studieren/studienangebot/bachelor/onlinekommunikation/projekte/projekte-detail/ask-me-anything"
+               target="_blank" rel="noopener noreferrer"
+               class="btn-arrow">Mehr erfahren →</a>
+          </div>
+        </article>
 
-        <div class="project-card fade-up delay-1">
+        <article class="project-card fade-up delay-1">
           <p class="project-num">02</p>
           <h3>Chatbot-Prototyping</h3>
           <p>
@@ -480,14 +541,14 @@
             Political Sciences in einem kollaborativen Projekt Chatbot-Prototypen
             für die Anwendung entwickelt.
           </p>
-          <a href="https://www.youtube.com/watch?v=9rZSZxHg_CI&t=293s"
-             target="_blank" rel="noopener noreferrer"
-             class="btn btn-outline">
-            Mehr erfahren →
-          </a>
-        </div>
+          <div class="pj-foot">
+            <a href="https://www.youtube.com/watch?v=9rZSZxHg_CI&t=293s"
+               target="_blank" rel="noopener noreferrer"
+               class="btn-arrow">Mehr erfahren →</a>
+          </div>
+        </article>
 
-        <div class="project-card fade-up delay-2">
+        <article class="project-card fade-up delay-2">
           <p class="project-num">03</p>
           <h3>KI-Werkstatt</h3>
           <p>
@@ -496,7 +557,7 @@
             Grundlagen wurde in Form eines Hackathons spielerisch der
             praktische Einsatz von KI geübt.
           </p>
-        </div>
+        </article>
 
       </div>
     </div>
@@ -504,19 +565,13 @@
 
 
   <!-- ══════════════════════════════════════
-       TERMIN BUCHEN
+       TERMIN BUCHEN – Cal.com
   ══════════════════════════════════════ -->
   <section class="booking" id="termin">
-    <div class="booking-bg" aria-hidden="true">
-      <img src="Multimedia/krisjanis-kazaks-hM62J2XrcH0-unsplash.jpg"
-           alt="" loading="lazy">
-    </div>
     <div class="container">
       <div class="booking-inner">
         <p class="section-tag">Kontakt</p>
-        <h2 class="section-title">
-          Jetzt Termin <span class="accent">buchen!</span>
-        </h2>
+        <h2 class="section-title">Jetzt Termin <em>buchen!</em></h2>
         <p class="section-desc">
           Haben Sie Interesse an unseren Leistungen? Buchen Sie jetzt ein
           Erstgespräch mit uns – komplett unverbindlich!
@@ -526,8 +581,7 @@
         </p>
 
         <!-- cal.com Inline Embed -->
-        <div id="cal-booking" style="width:100%; min-height:600px; border-radius:8px; overflow:hidden;"></div>
-
+        <div id="cal-booking"></div>
       </div>
     </div>
   </section>
@@ -540,7 +594,7 @@
     <div class="container">
       <div class="footer-inner">
         <a href="#home" class="footer-logo" aria-label="Zurück zur Startseite">
-          <img src="Multimedia/TAMANT Logo weiß_quadrat.png" alt="TAMANT">
+          <img src="Multimedia/TAMANT Logo_schwarz.png" alt="TAMANT">
         </a>
         <nav class="footer-links" aria-label="Footer-Navigation">
           <a href="#leistungen">Leistungen</a>
@@ -554,6 +608,11 @@
     </div>
   </footer>
 
+
+  <!-- ══════════════════════════════════════
+       NETWORK GRAPH (Hero)
+  ══════════════════════════════════════ -->
+  <script src="network.js"></script>
 
   <!-- ══════════════════════════════════════
        CAL.COM INLINE EMBED
@@ -596,9 +655,9 @@
     });
 
     Cal("ui", {
-      theme: "dark",
+      theme: "light",
       styles: {
-        branding: { brandColor: "#00c8ff" }
+        branding: { brandColor: "#00a8d8" }
       },
       hideEventTypeDetails: false,
       layout: "month_view"
