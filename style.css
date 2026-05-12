@@ -273,6 +273,7 @@ img.brand-mark {
   background: none;
   border: none;
   padding: 4px;
+  position: relative;
   z-index: 1001;
 }
 .nav-toggle span {
@@ -1071,6 +1072,32 @@ footer {
   .notebook-row .nb-action { text-align: left; justify-content: flex-start; }
 }
 
+/* ─── Hero: graph as inline block on mobile, not overlay ─── */
+@media (max-width: 900px) {
+  .hero {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-content {
+    min-height: auto;
+    padding: 56px 0 32px;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+    order: 1;
+  }
+  .hero-graph {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: clamp(260px, 50vw, 360px);
+    order: 2;
+    border-top: 1px solid var(--hairline);
+    overflow: hidden;
+  }
+  .hero-side { display: none; }
+}
+
 @media (max-width: 768px) {
   body { font-size: 15px; }
   .section,
@@ -1082,18 +1109,24 @@ footer {
   .nav-links {
     display: none;
     position: fixed;
-    inset: 0;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: var(--paper);
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 48px 24px;
     gap: 28px;
     z-index: 999;
+    border-top: 1px solid var(--hairline);
+    overflow-y: auto;
   }
   .nav-links.open { display: flex; }
-  .nav-links a { font-size: 18px; font-family: var(--serif); letter-spacing: 0; }
+  .nav-links a { font-size: 22px; font-family: var(--serif); letter-spacing: 0; }
   .nav-toggle  { display: flex; }
-  .nav-cta     { font-family: var(--sans) !important; font-size: 16px !important; padding: 12px 24px !important; }
+  .nav-cta     { font-family: var(--sans) !important; font-size: 16px !important; padding: 12px 24px !important; margin-top: 12px; }
 
   .hero-corner.bl,
   .hero-corner.br { font-size: 9px; letter-spacing: 0.1em; }
