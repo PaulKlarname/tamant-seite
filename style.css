@@ -1147,7 +1147,7 @@ footer {
 
 @media (max-width: 480px) {
   :root { --gutter: 20px; }
-  .hero-content { padding: 60px 0 40px; }
+  .hero-content { padding: 60px var(--gutter) 40px; }
   .actor-card,
   .project-card { padding: 28px 22px; min-height: auto; }
   .ki-critical  { padding: 24px 20px; }
