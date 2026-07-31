@@ -118,11 +118,9 @@
         <h2>Drittdienste</h2>
         <p>
           Für die Terminbuchung wird <strong>Cal.com</strong> (Cal.com, Inc.,
-          USA) eingebunden. Für den Chatbot wird <strong>Voiceflow</strong>
-          (Voiceflow Inc., Kanada/USA) verwendet. Beide Dienste können bei
-          Interaktion personenbezogene Daten (insb. IP-Adresse) auf
-          US-amerikanischen Servern verarbeiten. Rechtsgrundlage ist
-          Art. 6 Abs. 1 lit. f DSGVO.
+          USA) eingebunden. Der Dienst kann bei Interaktion personenbezogene
+          Daten (insb. IP-Adresse) auf US-amerikanischen Servern verarbeiten.
+          Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.
         </p>
 
         <h2>Urheberrecht</h2>
@@ -185,26 +183,6 @@
       <p class="footer-bottom">© 2026 TAMANT &nbsp;·&nbsp; Heß, Paul &nbsp;·&nbsp; Frankfurt am Main</p>
     </div>
   </footer>
-
-  <!-- Voiceflow Chatbot -->
-  <script>
-    (function(d, t) {
-      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-      v.onload = function() {
-        window.voiceflow.chat.load({
-          verify: { projectID: '68f63f50d2c4f43dfe952acd' },
-          url: 'https://general-runtime.voiceflow.com',
-          versionID: 'production',
-          voice: {
-            url: "https://runtime-api.voiceflow.com"
-          }
-        });
-      };
-      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
-      v.type = "text/javascript";
-      s.parentNode.insertBefore(v, s);
-    })(document, 'script');
-  </script>
 
   <script src="script.js"></script>
 </body>
